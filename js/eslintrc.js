@@ -6,7 +6,15 @@ module.exports = {
     amd: true,
     browser: true,
     jquery: true,
-    node: true
+    node: true,
+    es6: true
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+      jsx: true
+    },
+    sourceType: 'module'
   },
   rules: {
     'accessor-pairs': 0,
